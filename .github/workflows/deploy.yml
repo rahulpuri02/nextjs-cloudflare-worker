@@ -22,9 +22,6 @@ jobs:
       - name: Install dependencies
         run: npm i
 
-      - name: Ensure Cloudflare API Token is Set
-        run: '[ -n "$CLOUDFLARE_API_TOKEN" ] || { echo "CLOUDFLARE_API_TOKEN is missing"; exit 1; }'
-
       - name: Run OpenNext Build for Cloudflare
         run: npx opennextjs-cloudflare
 
