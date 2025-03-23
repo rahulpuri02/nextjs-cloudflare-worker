@@ -20,7 +20,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm i # Ensures a clean install
+        run: npm i
 
       - name: Run OpenNext Build for Cloudflare
         run: npx opennextjs-cloudflare
